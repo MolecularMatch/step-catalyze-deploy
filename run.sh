@@ -3,7 +3,7 @@ set -e;
 init_wercker_environment_variables() {
     if [ -z "$WERCKER_CATALYZE_DEPLOY_APP_NAME" ]; then
         if [ ! -z "$CATALYZE_APP_NAME" ]; then
-            export WERCKER_CATALYZE_DEPLOY_APP_NAME="$CATALYZE_APP_NAME";
+            export WERCKER_CATALYZE_DEPLOY_APP_NAME="$WERCKER_CATALYZE_DEPLOY_CATALYZE_APP_NAME";
         else
             fail "Missing or empty option catalyze_app_name. $error_suffix";
         fi
