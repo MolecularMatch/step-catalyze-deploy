@@ -53,6 +53,9 @@ The MIT License (MIT)
 
 # Changelog
 
+## 0.0.2
+* Corrected environment variable to handle what wercker actually provides
+
 ## 0.0.1
 
 * Initial release.
