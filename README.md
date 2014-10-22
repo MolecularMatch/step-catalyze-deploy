@@ -1,6 +1,9 @@
 # Catalyze deployment step
 
+[![wercker status](https://app.wercker.com/status/01748d9be54fc2fb46fc8c7d90cff1b9/m "wercker status")](https://app.wercker.com/project/bykey/01748d9be54fc2fb46fc8c7d90cff1b9)
+
 Deploy your code to Catalyze. This step requires that you deploy to a Custom deploy target.
+
 
 # Using wercker SSH key pair
 
