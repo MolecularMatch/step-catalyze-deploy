@@ -70,7 +70,7 @@ use_wercker_ssh_key() {
     local private_key=$(eval echo "\$${wercker_ssh_key_name}_PRIVATE");
 
     if [ ! -n "$private_key" ]; then
-        fail 'Missing key error. The key-name is specified, but no key with this name could be found. Make sure you generated an key, and exported it as an environment variable.';
+        fail 'Missing key error. The key-name is specified, but no key with this name could be found. Make sure you generated a key, and exported it as an environment variable.';
     fi
 
     debug "writing key file to $ssh_key_path";

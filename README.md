@@ -22,10 +22,11 @@ To do this you must generate a private/public key pair on wercker and manually a
 deploy:
     steps:
         - MolecularMatch/catalyze-deploy-step:
-            key-name: MY_DEPLOY_KEY
+            key-name: MY_SSH_DEPLOY_KEY
+            CATALYZE_APP_NAME: MY_APP_NAME
 ```
 
-In the above example the `MY_DEPLOY_KEY` should match the environment variable name you used in wercker. Note: you should not prefix it with a dollar sign or post fix it with `_PRIVATE` or `_PUBLIC`.
+In the above example the `MY_SSH_DEPLOY_KEY` should match the environment variable name you used in wercker. Note: you should not prefix it with a dollar sign or post fix it with `_PRIVATE` or `_PUBLIC`.
 
 # What's new
 
@@ -43,6 +44,7 @@ deploy:
     steps:
         - MolecularMatch/catalyze-deploy-step:
             key-name: MY_DEPLOY_KEY
+            CATALYZE_APP_NAME: MY_APP_NAME
 ```
 
 # Special thanks
@@ -52,6 +54,9 @@ deploy:
 The MIT License (MIT)
 
 # Changelog
+
+## 0.0.4
+* Successful deploy to catalyze environment and update to README to show proper configuration
 
 ## 0.0.2
 * Corrected environment variable to handle what wercker actually provides
