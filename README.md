@@ -49,6 +49,8 @@ deploy:
 
 # Special thanks
 
+This wouldn't have been possible without the excellent work done by the Wercker team: https://github.com/wercker/step-heroku-deploy
+
 # License
 
 The MIT License (MIT)
